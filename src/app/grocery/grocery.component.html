@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <div>
-<div class="row">
+  <h3>Type list items here </h3>
+  <div class="row">
   <div class="col-xs-6 col-md-4">
     <div class="input-group">
       <!--(ngModel) to bind input data to a variable-->
@@ -15,7 +16,7 @@
 
 <ul class="list-group">
   <li *ngFor="let task of tasks" class="list-group-item">
-    <span> {{ task.name }} </span>
+    <span (click)=onStrike(task) [ngClass]="{'strike':task.strike}"> {{ task.name }} </span>
     <i class="fas fa-edit" (click)="onEdit(task)"></i> 
     <i class="fas fa-trash-alt" (click)="onDelete(task)"></i>
   </li>
