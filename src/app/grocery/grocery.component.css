@@ -3,22 +3,33 @@
 }
 .card{
     position: relative;
-    left : 38%;
-    width:50vh;
+    left : 36%;
+    width:65vh;
     height: 80vh;
     box-shadow: 0 4px 8px o rgba(0,0,0,0.2);
     border-radius: 10px;
     border-style: solid;
     border-width: 20px;
     border-color: burlywood;
-    background: linear-gradient(to bottom, gray, black);
+    background: radial-gradient(gray, black);
 }
 .circle{
     border-radius: 50%;
     height:50px;
     width:50px;
     background-color: black;
+    opacity: 0.5;
+    border-style: solid;
+    border-width:5px;
+    border-color:rgba(0, 0, 0, 0.164);
     position: relative;
-    left:48%;
+    left:49%;
     background: radial-gradient(gray, black);
+}
+.fa-trash-alt{
+    color: red;
+}
+.fa-edit{
+    left: 2rem;
+    color: blue;
 }

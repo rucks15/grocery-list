@@ -1,10 +1,10 @@
 <div class="circle">
-  
+
 </div>
 <div class="card">
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
 <div>
-  <h3>Type list items here </h3>
+  <h3 style="color: antiquewhite"> Type list items here </h3>
   <div class="row">
   <div class="col-xs-12 col-md-10">
     <div class="input-group">
@@ -21,8 +21,8 @@
     <ul class="list-group">
       <li *ngFor="let task of tasks" class="list-group-item">
         <span (click)=onStrike(task) [ngClass]="{'strike':task.strike}"> {{ task.name }} </span>
-        <i class="fas fa-edit" (click)="onEdit(task)"></i> 
-        <i class="fas fa-trash-alt" (click)="onDelete(task)"></i>
+        <i class="fas fa-edit" (click)="onEdit(task)" style="float: right"></i> 
+        <i class="fas fa-trash-alt" (click)="onDelete(task)" style="float: right"></i>
       </li>
     </ul>
   </div>
